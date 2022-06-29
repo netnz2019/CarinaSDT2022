@@ -1,17 +1,17 @@
 public class People{
 
   private int studentno;
-  private String name;
+  private String firstname;
   private String manaaki;
-  private String tba;
-  private String na;
+  private String lastname;
+  private int dateofbirth;
 
   
-  public People (String name, String manaaki, String tba, String na, int studentno){
+  public People (String firstname, String manaaki, String lastname, int dateofbirth, int studentno){
     this.manaaki = manaaki;
-    this.name = name;
-    this.tba = tba;
-    this.na = na;
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.dateofbirth = dateofbirth;
     this.studentno = studentno;
   }
 
@@ -20,16 +20,16 @@ public class People{
     return this.manaaki;
   }
   
-  public String getName(){
-    return this.name;
+  public String getFirstname(){
+    return this.firstname;
   }
   
-  public String getTba(){
-    return this.tba;
+  public String getLastname(){
+    return this.lastname;
   } 
   
-  public String getNa(){
-    return this.na;
+  public int getDateofbirth(){
+    return this.dateofbirth;
   }  
   
   public int getStudentno(){
@@ -40,14 +40,14 @@ public class People{
   public void setManaaki(String manaaki){
     this.manaaki = manaaki;
   }
-  public void setName(String name){
-    this.name = name;
+  public void setFirstname(String firstname){
+    this.firstname = firstname;
   }  
-  public void setTba(String tba){
-    this.tba = tba;
+  public void setLastname(String lastname){
+    this.lastname = lastname;
   } 
-  public void setNa(String na){
-    this.na = na;
+  public void setDateofbirth(int dateofbirth){
+    this.dateofbirth = dateofbirth;
   }  
   public void setStudentno(int studentno){
   this.studentno = studentno;
