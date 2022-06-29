@@ -1,6 +1,4 @@
-
 import java.util.ArrayList;
-import java.util.List;
 
 public class LibraryBooks{
   
@@ -11,11 +9,11 @@ public class LibraryBooks{
     
     
     
-    book.add(new Books("Author1", "Vista", "Fountain", "Oxford Blue", 250));
-    book.add(new Books("Author2", "Vista", "Fountain", "Cambridge Blue", 350));
+    book.add(new Books("Author1", "Book1", "Fountain", "Oxford Blue", 250));
+    book.add(new Books("Author2", "Book2", "Fountain", "Cambridge Blue", 350));
     listAllBook(book);
-    addBooks("Author3","Safari","Fountain", "Sapphire Blue", 26);
-    addBooks("Aithor4","IM Premium", "Ballpoint","Black",80);
+    addBooks("Author3","Book3","Fountain", "Sapphire Blue", 26);
+    addBooks("Aithor4","Book4", "Ballpoint","Black",80);
     listAllBooksDetails(book);
     
     System.out.println("List only the Parker Books \n");
@@ -66,62 +64,5 @@ public static void findAuthor(String author){
   
 }
 }
-
-
-
-private int quantity;
-    
-    List<Books> books = new ArrayList<>();
-    
-    public LibraryBooks(int quantity) {
-        this.quantity = quantity;
-        for(int i = 0; i < quantity; i++) {
-            books.add(new Books());
-        }
-    }
-
-    public void addBook() {
-        books.add(new Books());
-    }
-    
-    public boolean borrowBook() {
-        for(Books b : books) {
-            if(!b.isBorrowed()) {
-                b.setToBorrowed();
-                return true;
-            }
-            else {
-                continue;
-            }
-        }
-        System.out.println("All books are borrowed, sorry");
-        return false;
-    }
-    
-    public boolean returnBook() {
-        for(Books b : books) {
-            if(b.isBorrowed()) {
-                b.setToReturned();
-                return true;
-            }
-            else {
-                continue;
-            }
-        }
-        System.out.println("Cannot return book at this time, sorry!");
-        return false;
-    }
-    
-    public void printBooks() {
-        for(Books b : books) {
-            System.out.println("Borrowed? " + b.isBorrowed());
-        }
-    }
-    
-    public int getQuantity() {
-        return this.quantity;
-    }
-
-
 
 }
