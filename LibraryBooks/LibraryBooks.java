@@ -8,15 +8,14 @@ public class LibraryBooks{
   public  static void main (String[] args){
     
     
-    
-    book.add(new Books("Author1", "Book1", "Fountain", "Oxford Blue", 250));
-    book.add(new Books("Author2", "Book2", "Fountain", "Cambridge Blue", 350));
+   book.add(new Books("Author1", "Book1", "Tba", "Na", 123));
+    book.add(new Books("Author2", "Book2", "Tba", "Na", 234));
     listAllBook(book);
-    addBooks("Author3","Book3","Fountain", "Sapphire Blue", 26);
-    addBooks("Aithor4","Book4", "Ballpoint","Black",80);
+    addBooks("Author3","Book3","Tba", "Na", 345);
+    addBooks("Aithor4","Book4", "Tba","Na",456);
     listAllBooksDetails(book);
     
-    System.out.println("List only the Parker Books \n");
+    System.out.println("List only Author4's Book \n");
     findAuthor("Author4");
   }
   
