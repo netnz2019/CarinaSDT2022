@@ -1,25 +1,5 @@
-
 public class Books{
 
-    private boolean borrowed;
-    
-    public Books() {
-        this.borrowed = false;
-    }
-    
-    public void setToBorrowed() {
-        this.borrowed = true;
-    }
-    
-    public void setToReturned() {
-        this.borrowed = false;
-    }
-    
-    public boolean isBorrowed() {
-        return this.borrowed;
-    }
-    
-    
   private int isbn;
   private String title;
   private String author;
@@ -72,6 +52,6 @@ public class Books{
   public void setIsbn(int isbn){
   this.isbn = isbn;
   }
-  
+
   
 }
