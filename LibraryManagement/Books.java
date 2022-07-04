@@ -1,18 +1,18 @@
-public class Books{
+public class Books implements java.io.Serializable {
 
-  private int isbn;
+  private int bookno;
   private String title;
   private String author;
   private String tba;
   private String na;
 
   
-  public Books (String title, String author, String tba, String na, int isbn){
+  public Books (String title, String author, String tba, String na, int bookno){
     this.author = author;
     this.title = title;
     this.tba = tba;
     this.na = na;
-    this.isbn = isbn;
+    this.bookno = bookno;
   }
 
   
@@ -32,8 +32,8 @@ public class Books{
     return this.na;
   }  
   
-  public int getIsbn(){
-    return this.isbn;
+  public int getBookno(){
+    return this.bookno;
   }
   
   
@@ -49,8 +49,8 @@ public class Books{
   public void setNa(String na){
     this.na = na;
   }  
-  public void setIsbn(int isbn){
-  this.isbn = isbn;
+  public void setBookno(int bookno){
+  this.bookno = bookno;
   }
 
   
