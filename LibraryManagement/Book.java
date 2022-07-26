@@ -1,10 +1,5 @@
 package book;
 
-/**
- * @ Author 12629
- * @ Date 2022/4/10 11:41
- * @ Description：
- */
 public class Book {
     private String name;// title
     private String author;// author
