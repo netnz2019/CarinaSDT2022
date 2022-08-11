@@ -10,18 +10,18 @@ import java.util.Scanner;
  *
  * @author gamer
  */
-public class students {
+public class Students {
 
 Scanner input = new Scanner(System.in);
 
-student theStudents[] = new student[50];
+Student theStudents[] = new Student[50];
 
 //books book;
 
 
 public static int count = 0;
 
-public void addStudent(student s){
+public void addStudent(Student s){
 
     for (int i=0; i<count; i++){
 
@@ -78,14 +78,14 @@ public int isStudent(){
     return -1;
 
 }
-public void checkOutBook(books book){
+public void checkOutBook(Books book){
     int studentIndex =this.isStudent();
 
     if (studentIndex!=-1){
         System.out.println("checking out");
 
         book.showAllBooks();
-        book b = book.checkOutBook();
+        Book b = book.checkOutBook();
         System.out.println("checking out");
         if (b!= null){
 
@@ -109,12 +109,12 @@ public void checkOutBook(books book){
 
 }
 
-public void checkInBook(books book){
+public void checkInBook(Books book){
 
     int studentIndex = this.isStudent();
     if (studentIndex != -1){
         System.out.println("S.No\t\t\tBook Name\t\t\tAuthor Name");
-        student s = theStudents[studentIndex];
+        Student s = theStudents[studentIndex];
         for (int i=0; i<s.booksCount; i++){
 
             System.out.println(s.borrowedBooks[i].sNo+ "\t\t\t" + s.borrowedBooks[i].bookName + "\t\t\t"+

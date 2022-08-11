@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author gamer
  */
-public class book {
+public class Book {
 
 public int sNo;
 public String bookName;
@@ -20,7 +20,7 @@ public int bookQtyCopy;
 
 Scanner input = new Scanner(System.in);
 
-public book(){
+public Book(){
 
     System.out.println("Enter Serial No of Book:");
     this.sNo = input.nextInt();

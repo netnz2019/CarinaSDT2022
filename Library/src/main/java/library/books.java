@@ -10,9 +10,9 @@ import java.util.Scanner;
  *
  * @author gamer
  */
-public class books {
+public class Books {
 
-book theBooks[] = new book[50];     // Array that stores 'book' Objects.
+Book theBooks[] = new Book[50];     // Array that stores 'book' Objects.
 public static int count;    // Counter for No of book objects Added in Array.
 
 Scanner input = new Scanner(System.in);
@@ -20,7 +20,7 @@ Scanner input = new Scanner(System.in);
 
 
 
-public int compareBookObjects(book b1, book b2){
+public int compareBookObjects(Book b1, Book b2){
 
     if (b1.bookName.equalsIgnoreCase(b2.bookName)){
 
@@ -36,7 +36,7 @@ public int compareBookObjects(book b1, book b2){
     return 1;
 }
 
-public void addBook(book b){
+public void addBook(Book b){
 
     for (int i=0; i<count; i++){
 
@@ -188,7 +188,7 @@ public int isAvailable(int sNo){
 
 }
 
-public book checkOutBook(){
+public Book checkOutBook(){
 
     System.out.println("Enter Serial No of Book to be Checked Out.");
     int sNo = input.nextInt();
@@ -207,7 +207,7 @@ public book checkOutBook(){
 
 }
 
-public void checkInBook(book b){
+public void checkInBook(Book b){
 
     for (int i=0; i<count; i++){
 

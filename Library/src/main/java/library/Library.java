@@ -20,8 +20,8 @@ public static void main(String[] args) {
 
     System.out.println("Welcome to Mount Hutt College Library!");
     System.out.println("Please Select From The Following Options:");
-    books ob = new books();
-    students obStudent = new students();
+    Books ob = new Books();
+    Students obStudent = new Students();
     int choice;
     int searchChoice;
 
@@ -33,7 +33,7 @@ public static void main(String[] args) {
         switch(choice){
 
             case 1 -> {
-                book b = new book();
+                Book b = new Book();
                 ob.addBook(b);
             }
 
@@ -54,7 +54,7 @@ public static void main(String[] args) {
 
             case 4 -> ob.showAllBooks();
             case 5 -> {
-                student s = new student();
+                Student s = new Student();
                 obStudent.addStudent(s);
             }
             case 6 -> obStudent.showAllStudents();

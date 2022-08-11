@@ -10,17 +10,17 @@ import java.util.Scanner;
  *
  * @author gamer
  */
-public class student {
+public class Student {
 
 String studentName;
 String regNum;
 
-book borrowedBooks[] = new book[3];
+Book borrowedBooks[] = new Book[3];
 public int booksCount = 0;
 
 Scanner input = new Scanner(System.in);
 
-public student(){
+public Student(){
 
     System.out.println("Enter Student Name:");
     this.studentName = input.nextLine();
